@@ -1,7 +1,6 @@
----
 app-id: com.microsoft.AzureStorageExplorer
 runtime: org.freedesktop.Platform
-runtime-version: "23.08"
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.dotnet6
@@ -10,23 +9,23 @@ separate-locales: false
 tags:
   - proprietary
 build-options:
-  append-path: "/usr/lib/sdk/dotnet6/bin"
-  append-ld-library-path: "/usr/lib/sdk/dotnet6/lib"
+  append-path: /usr/lib/sdk/dotnet6/bin
+  append-ld-library-path: /usr/lib/sdk/dotnet6/lib
   env:
-    PKG_CONFIG_PATH: "/app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet6/lib/pkgconfig"
+    PKG_CONFIG_PATH: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet6/lib/pkgconfig
 finish-args:
-  - "--share=ipc"
-  - "--socket=x11"
-  - "--socket=pulseaudio"
-  - "--share=network"
-  - "--device=dri"
-  - "--talk-name=org.freedesktop.secrets"
-  - "--talk-name=org.gnome.SessionManager"
-  - "--talk-name=com.canonical.AppMenu.Registrar"
-  - "--talk-name=com.canonical.AppMenu.Registrar.*"
-  - "--system-talk-name=org.freedesktop.login1"
-  - "--persist=.IdentityService"
-  - "--persist=ScriptedHost"
+  - --share=ipc
+  - --socket=x11
+  - --socket=pulseaudio
+  - --share=network
+  - --device=dri
+  - --talk-name=org.freedesktop.secrets
+  - --talk-name=org.gnome.SessionManager
+  - --talk-name=com.canonical.AppMenu.Registrar
+  - --talk-name=com.canonical.AppMenu.Registrar.*
+  - --system-talk-name=org.freedesktop.login1
+  - --persist=.IdentityService
+  - --persist=ScriptedHost
 modules:
   - shared-modules/libsecret/libsecret.json
   - name: storage-explorer
@@ -42,9 +41,9 @@ modules:
       - type: script
         dest-filename: apply_extra
         commands:
-          - "mkdir storageexplorer"
-          - "tar xfz storage-explorer.tar.gz -C storageexplorer"
-          - "rm -f storage-explorer.tar.gz"
+          - mkdir storageexplorer
+          - tar xfz storage-explorer.tar.gz -C storageexplorer
+          - rm -f storage-explorer.tar.gz
       - type: file
         path: StorageExplorer
       - type: file
@@ -57,9 +56,9 @@ modules:
         filename: storage-explorer.tar.gz
         only-arches:
           - x86_64
-        url: https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.32.1/StorageExplorer-linux-x64.tar.gz
-        sha256: 43ab7e366913aa74af0253d7c1a3a51764c6b093cc497fa42f647215f2ebfcdf
-        size: 151053708
+        url: https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.33.0/StorageExplorer-linux-x64.tar.gz
+        sha256: d72c6cf15c38be8582ecf0eb2b308011094950cb5af65e1bc1690b4fbd2184be
+        size: 139847761
         x-checker-data:
           type: json
           url: https://api.github.com/repos/microsoft/AzureStorageExplorer/releases/latest
