@@ -3,16 +3,16 @@ runtime: org.freedesktop.Platform
 runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.dotnet6
+  - org.freedesktop.Sdk.Extension.dotnet8
 command: StorageExplorer
 separate-locales: false
 tags:
   - proprietary
 build-options:
-  append-path: /usr/lib/sdk/dotnet6/bin
-  append-ld-library-path: /usr/lib/sdk/dotnet6/lib
+  append-path: /usr/lib/sdk/dotnet8/bin
+  append-ld-library-path: /usr/lib/sdk/dotnet8/lib
   env:
-    PKG_CONFIG_PATH: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet6/lib/pkgconfig
+    PKG_CONFIG_PATH: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet8/lib/pkgconfig
 finish-args:
   - --share=ipc
   - --socket=x11
