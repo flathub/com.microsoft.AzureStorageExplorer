@@ -19,6 +19,7 @@ finish-args:
   - --socket=pulseaudio
   - --share=network
   - --device=dri
+  - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.gnome.SessionManager
   - --talk-name=com.canonical.AppMenu.Registrar
