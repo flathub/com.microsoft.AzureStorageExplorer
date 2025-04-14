@@ -37,8 +37,11 @@
     <content_attribute id="social-info">moderate</content_attribute>
   </content_rating>
   <releases>
-    <release version="v1.37.0" date="2025-01-07">
+    <release version="v1.38.0" date="2025-04-14">
       <description></description>
+    </release>
+    <release version="v1.37.0" date="2025-01-07">
+      <description/>
     </release>
     <release version="v1.36.2" date="2024-10-29">
       <description/>
