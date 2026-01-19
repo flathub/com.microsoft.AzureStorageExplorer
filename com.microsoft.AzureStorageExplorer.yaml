@@ -28,7 +28,6 @@ finish-args:
   - --persist=.IdentityService
   - --persist=ScriptedHost
 modules:
-  - shared-modules/libsecret/libsecret.json
   - name: storage-explorer
     buildsystem: simple
     build-commands:
