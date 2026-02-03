@@ -15,6 +15,7 @@ build-options:
     PKG_CONFIG_PATH: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet8/lib/pkgconfig
 finish-args:
   - --share=ipc
+  - --socket=wayland
   - --socket=x11
   - --socket=pulseaudio
   - --share=network
