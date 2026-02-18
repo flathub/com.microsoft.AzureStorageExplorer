@@ -57,9 +57,9 @@ modules:
         filename: storage-explorer.tar.gz
         only-arches:
           - x86_64
-        url: https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.41.0/StorageExplorer-linux-x64.tar.gz
-        sha256: fff049f41a32b50084f3eecf8040cdd49fe18648f0e0b85e1731cfbccd929457
-        size: 169567345
+        url: https://github.com/microsoft/AzureStorageExplorer/releases/download/1.41.1/StorageExplorer-linux-x64.tar.gz
+        sha256: 5d4a560788f35cb40f8e74323dd5665e4a468bf435f84c51a6013fb0441ff67b
+        size: 171779409
         x-checker-data:
           type: json
           url: https://api.github.com/repos/microsoft/AzureStorageExplorer/releases/latest
